@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Elementos Flutuantes na prática</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+    body {
+        background: #f4f4f4;
+    }
+
+    #principal {
+        width: 920px;
+        /*border: 1px solid red;*/
+    }
+
+    .noticia {
+        background: #e5e5e5;
+        padding: 5px;
+        width: 280px;
+        margin: 7px;
+        float: left;
+    }
+
+    .imagem-galeria {
+        background: white;
+        width: 265px;
+        padding: 5px;
+        float: left;
+        margin: 15px;
+    }
+
+    .clear {
+        clear: both;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="principal">
+        <div id="noticias">
+            <div class="noticia">
+                <h2>Laborum veniam elit do.1</h2>
+                <p>
+                    Lorem ipsum dolor proident incididunt consectetur culpa anim eiusmod esse dolore minim velit adipisicing.
+                </p>
+                <a href="">Veja Mais</a>
+            </div>
+            <div class="noticia">
+                <h2>Laborum veniam elit do.2</h2>
+                <p>
+                    Lorem ipsum dolor proident incididunt consectetur culpa anim eiusmod esse dolore minim velit adipisicing.
+                </p>
+                <a href="">Veja Mais</a>
+            </div>
+            <div class="noticia">
+                <h2>Laborum veniam elit do.3</h2>
+                <p>
+                    Lorem ipsum dolor proident incididunt consectetur culpa anim eiusmod esse dolore minim velit adipisicing.
+                </p>
+                <a href="">Veja Mais</a>
+            </div>
+        </div>
+        <!-- fim principal -->
+        <div class="clear"></div>
+        <div>
+            <div class="imagem-galeria">
+                <img src="imagens/imagem1.png">
+                <p>Resumo 1</p>
+            </div>
+            <div class="imagem-galeria">
+                <img src="imagens/imagem2.png">
+                <p>Resumo 2</p>
+            </div>
+            <div class="imagem-galeria">
+                <img src="imagens/imagem3.png">
+                <p>Resumo 3</p>
+            </div>
+            <div class="imagem-galeria">
+                <img src="imagens/imagem4.png">
+                <p>Resumo 4</p>
+            </div>
+            <div class="imagem-galeria">
+                <img src="imagens/imagem5.png">
+                <p>Resumo 5</p>
+            </div>
+        </div>
+        <!-- fim fotos -->
+    </div>
+    <!-- fim principal -->
+</body>
+
+</html>
