@@ -1,0 +1,551 @@
+/**** Seletor universal ****/
+
+
+/*
+* {
+  border: 1px solid red;
+}*/
+
+
+/**** Seletor de texto ****/
+
+
+/*h1{
+  color: green;
+}*/
+
+
+/**** Seletor de classe ****/
+
+
+/*.verde {
+  color: green;
+}*/
+
+
+/*p.verde {
+  color: green;
+}*/
+
+
+/**** Seletor de ID ****/
+
+
+/*#cabecalho {
+  border: 1px solid blue;
+}*/
+
+
+/**** Seletor de filho ****/
+
+
+/*li>a {
+  color: red;
+  text-decoration: none;
+}*/
+
+
+/**** Seletor de descendente ****/
+
+
+/*div a {
+  color: green;
+}*/
+
+
+/**** Seletor de irmão adjacente ****/
+
+
+/*h1 + p{
+  color: red;
+}*/
+
+
+/**** Seletor de irmão geral ****/
+
+
+/*h1~p {
+  color: pink;
+}*/
+
+
+/************************ HERANÇA E ESPECIFICIDADE *****************************/
+
+
+/* Herança */
+
+
+/*body{
+  color: red;
+  border: 1px solid blue;
+}
+*/
+
+
+/* Especificidade */
+
+
+/* Seletores iguais, exceção important */
+
+
+/*#pagina p {
+  color: red !important; 
+}
+
+#pagina p {
+  color: blue;
+}*/
+
+
+/*
+Se um seletor for mais específico que outro a regra mais específica será aplicada
+(terá precedência sobre regras mais gerais)
+*/
+
+
+/*
+
+* {
+  color: red;
+}
+
+h2 { 3
+  color: blue;
+}
+
+h2.verde { 2
+  color: green;
+}
+
+h2#amarelo { 1
+  color: yellow;
+}*/
+
+
+/************************ BARRA DE NAVEGAÇÃO VERTICAL *****************************/
+
+
+/*ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 5px 20px;
+  background: url(../imagens/seta.png) no-repeat left center;
+}*/
+
+
+/*ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul a {
+  width: 200px;
+  height: 40px;
+  display: block;
+  color: #000;
+  text-decoration: none;
+  text-indent: 40px;
+  line-height: 40px;
+  background: #f7b600 url(../imagens/menu.png) no-repeat left bottom;
+}
+
+ul a:hover, .selecionado a {
+   background-position: right bottom;
+   background-color: #f99200;
+   color: #fff;
+}
+
+#home #navegacao .home a{
+  background-position: right bottom;
+  background-color: #f99200;
+  color: #fff;
+}
+*/
+
+
+/************************ BARRA DE NAVEGAÇÃO HORIZONTAL *****************************/
+
+
+/*
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 720px;
+  background: #159cb0 url(../imagens/fundo-horizontal.png) repeat-x;
+  float: left;
+}
+
+ul li {
+     float: left;
+}
+
+ul li a {
+  display: block;
+  padding: 0 2em;
+  line-height: 2.2em;
+  text-decoration: none;
+  color: #fff;
+  background: url(../imagens/divisor.png) repeat-y;
+}
+
+ul .primeiro a {
+  background: none;
+}
+
+ul li a:hover {
+  color: #085662;
+  background: #44cade;
+}
+
+#home #navegacao .home a{
+  color: #085662;
+  background: #44cade;
+}*/
+
+
+/************************ ABAS DE NAVEGAÇÃO *****************************/
+
+
+/*body {
+  font-family: "Trebuchet MS", Helvetica, Sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 720px;
+}
+
+ul li {
+  float: left;
+  background: url(../imagens/aba-direita.png) no-repeat top right;
+}
+
+li a {
+  display: block;
+  padding: 0 2em;
+  line-height: 3em;
+  text-decoration: none;
+  background: url(../imagens/aba-esquerda.png) no-repeat top left;
+  color: #fff;
+}
+
+ul a:hover {
+  color: #894a1f;
+}
+
+ul #atual {
+  background: url(../imagens/aba-direita-atual.png) no-repeat top right;
+}
+
+ul #atual a {
+  background: url(../imagens/aba-esquerda-atual.png) no-repeat top left;  
+}*/
+
+
+/************************ LAYOUT FIXO *****************************/
+
+
+/*body {
+  font-family: "Trebuchet MS", Helvetica, Sans-serif;
+  background: #f2f2f2;
+}
+
+#container {
+  width: 720px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+#marca {
+  height: 100px;
+  background: #9E9E9E;
+  text-align: center;
+  line-height: 100px;
+}
+
+#conteudo {
+  width: 520px;
+  float: right;
+}
+
+#conteudo-principal {
+  width: 320px;
+  float: left;
+}
+
+#conteudo-secundario{
+  width: 180px;
+  float: right;
+  background: #d1d1d1;
+}
+
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#navegacao {
+  width: 180px;
+  float: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #d1d1d1;
+}
+
+#navegacao ul {
+  list-style: none;
+}
+
+#navegacao li a{
+  text-decoration: none;
+}
+
+
+#rodape {
+  clear: both;
+  background: #c4c4c4;
+  padding: 5px;
+}
+*/
+
+
+/************************ LAYOUT LIQUÍDO *****************************/
+
+
+/*body {
+  font-family: "Trebuchet MS", Helvetica, Sans-serif;
+  background: #f2f2f2;
+}
+
+#container {
+  width: 85%;
+  margin: 0 auto;
+  background: #fff;
+  min-width: 720px;
+}
+
+#marca {
+  width: 100%;
+  height: 100px;
+  background: #9E9E9E;
+  text-align: center;
+  line-height: 100px;
+}
+
+#conteudo {
+  width: 75%;
+  float: right;
+}
+
+#navegacao {
+  width: 23%;
+  float: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #d1d1d1;
+}
+
+#conteudo-principal {
+  width: 64%;
+  float: left;
+}
+
+#conteudo-secundario{
+  width: 34%;
+  float: right;
+  background: #d1d1d1;
+}
+
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+#navegacao ul {
+  list-style: none;
+}
+
+#navegacao li a{
+  text-decoration: none;
+}
+
+
+#rodape {
+  clear: both;
+  background: #c4c4c4;
+  padding: 5px;
+}
+*/
+
+
+/************************ IMAGENS LIQUÍDAS *****************************/
+
+
+/*body {
+  font-family: "Trebuchet MS", Helvetica, Sans-serif;
+  background: #f2f2f2;
+}
+
+#container {
+  width: 85%;
+  margin: 0 auto;
+  background: #fff;
+  min-width: 720px;
+}
+
+#marca {
+  width: 100%;
+  height: 3 00px;
+  background: #9E9E9E url(../imagens/cabecalho.jpg) no-repeat center;
+  text-align: center;
+  line-height: 200px;
+}
+
+
+#conteudo {
+  width: 75%;
+  float: right;
+}
+
+#navegacao {
+  width: 23%;
+  float: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #d1d1d1;
+}
+
+#conteudo-principal {
+  width: 64%;
+  float: left;
+}
+
+img.img-noticia {
+  width: 90%;
+  padding: 2%;
+  max-width: 600px;
+}
+
+#conteudo-secundario{
+  width: 34%;
+  float: right;
+  background: #d1d1d1;
+}
+
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+#navegacao ul {
+  list-style: none;
+}
+
+#navegacao li a{
+  text-decoration: none;
+}
+
+
+#rodape {
+  clear: both;
+  background: #c4c4c4;
+  padding: 5px;
+}
+*/
+
+
+/************************ COLUNA FALSA *****************************/
+
+body {
+    font-family: "Trebuchet MS", Helvetica, Sans-serif;
+    background: #f2f2f2;
+}
+
+#container {
+    width: 960px;
+    margin: 0 auto;
+    background: #fff url(../imagens/coluna.png) repeat-y left top;
+    min-width: 720px;
+    max-width: 1280px;
+}
+
+#marca {
+    width: 100%;
+    height: 3 00px;
+    background: #9E9E9E url(../imagens/cabecalho.jpg) no-repeat center;
+    text-align: center;
+    line-height: 200px;
+}
+
+
+#conteudo {
+    width: 75%;
+    float: right;
+}
+
+#navegacao {
+    width: 23%;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#conteudo-principal {
+    width: 64%;
+    float: left;
+}
+
+img.img-noticia {
+    width: 90%;
+    padding: 2%;
+    max-width: 600px;
+}
+
+#conteudo-secundario {
+    width: 34%;
+    float: right;
+    background: #d1d1d1;
+}
+
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+#navegacao ul {
+    list-style: none;
+}
+
+#navegacao li a {
+    text-decoration: none;
+}
+
+
+#rodape {
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+}
