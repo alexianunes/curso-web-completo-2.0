@@ -475,6 +475,7 @@ img.img-noticia {
 
 /************************ COLUNA FALSA *****************************/
 
+/*
 body {
     font-family: "Trebuchet MS", Helvetica, Sans-serif;
     background: #f2f2f2;
@@ -548,4 +549,176 @@ img.img-noticia {
     clear: both;
     background: #c4c4c4;
     padding: 5px;
+}*/
+
+/************************ ESTILIZANDO TABELAS *****************************/
+/*
+body {
+    font-family: "Trebuchet MS", Helvetica, Sans-serif;
 }
+
+
+table {
+  width: 600px;
+  border-collapse: separate; collapse
+}
+
+th, td{
+  padding: 7px;
+}
+
+th {
+  text-transform: uppercase;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #111;
+  text-align: left;
+  font-size: 90%;
+  letter-spacing: 0.1em;
+}
+
+tr.alternado {
+  background-color: #efefef;
+}
+
+tr:hover {
+  background-color: #c3e6e5;
+}
+
+.numero {
+  text-align: right;
+}
+*/
+
+/************************ ESTILIZANDO FORMULÁRIOS *****************************/
+/* 
+body {
+    font-family: "Trebuchet MS", Helvetica, Sans-serif;
+}
+
+fieldset {
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+}
+
+legend {
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+}
+
+input { [type="text"] 
+  width: 20em;
+}
+
+textarea {
+  width: 20em;
+  height: 10em;
+}
+
+input.radio, input.checkbox, input.submit {
+  width: auto;
+}
+
+input.radio {
+  margin-right: 1em;
+}
+*/
+
+/************************ ESTILIZANDO FORMULÁRIOS 2 *****************************/
+
+/*body {
+    font-family: "Trebuchet MS", Helvetica, Sans-serif;
+    background: #643d87 url(../imagens/fundo.jpg) no-repeat top center;
+}
+
+#container {
+  width: 400px;
+  height: 300px;
+  background-color: rgba(255,255,255,0.3);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 120px;
+  text-align: center;
+}
+
+#container img {
+  width: 120px;
+  height: 120px;
+  margin-top: -60px;
+  margin-bottom: 30px;
+}
+
+input {
+  height: 40px;
+  width: 80%;
+  font-size: 18px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding-left: 40px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: 10px;
+}
+
+input.email {
+  background-image: url(../imagens/icone-usuario.png);
+}
+
+input.senha {
+  background-image: url(../imagens/icone-cadeado.png);
+}
+
+input.submit {
+  color: #fff;
+  background-color: #f79300;
+  border: 2px solid #db7d00;
+  padding: 5px 20px;
+  height: 45px;
+  width: 90%;
+
+  background: linear-gradient(to bottom, #faa600, #f68a00);
+}*/
+
+/************************ ARREDONDAMENTO COM IMAGENS *****************************/
+
+.caixa {
+  width: 400px;
+  background: #dedede url(../imagens/fundo-arredondamento.png) repeat-y;
+}
+
+.caixa h2 {
+  padding: 10px 20px 0 20px;
+  background: #dedede url(../imagens/topo2.png) no-repeat left top;
+}
+
+.caixa p {
+  padding: 0 20px;
+  margin-bottom: 0;
+}
+
+.caixa .ultimo {
+  background: #dedede url(../imagens/baixo2.png) no-repeat left bottom;
+  width: 400px;
+  height: 24px;
+}
+
+/*.caixa {
+  width: 400px;
+  background: #dedede url(../imagens/topo.png) no-repeat left top;
+}
+
+.caixa h2 {
+  padding: 10px 20px 0 20px;
+}
+
+.caixa p {
+  padding: 0px 20px 20px 20px;
+  background: #dedede url(../imagens/baixo.png) no-repeat left bottom;
+}*/
