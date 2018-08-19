@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta  charset="UTF-8">
+  <title>Javascript</title>
+  <script>
+  
+    /*setTimeout(function(){
+      document.write('Teste')
+    },2000)*/
+
+    // setInterval(function(){document.write('Teste Interval'+'<br>')}, 2000)
+
+    // var i = 100
+    // setInterval(function(){document.write(i); i--}, 1000)
+
+    var i = 5
+    var x = setInterval(function(){
+      document.write(i)
+      i--
+
+      if(i === 0){
+        // window.location.reload()
+        clearInterval(x)
+      }
+
+    }, 1000)
+
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript</title>
+  <script>
+      //netflix
+
+
+      var video = Array()
+
+      video[1] = Array()
+      video[1]['nome'] = 'Fullmetal Alchemist'
+      video[1]['categoria'] = 'Anime'
+
+      function getVideo(video){
+        try {
+          //logica
+          //http
+          console.log(video[0]['nome'])
+        }catch (e){
+          tratarErro(e)
+          console.log('Agora sim podemos tratar esse erro')
+          throw new Error('Houve um erro mas não se preocupe nisso agora!!!')
+        } finally {
+          console.log('Sempre passa por aqui (try/catch)')
+        }
+      }
+
+      function tratarErro(e){
+        console.log(e)
+      }
+
+      getVideo(video)
+  </script>
+</head>
+<body>
+
+</body>
+</html>

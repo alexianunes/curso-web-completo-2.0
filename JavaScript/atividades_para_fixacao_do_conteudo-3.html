@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Javascript</title>
+  
+  <script>
+    function modificarBackground(){
+      document.getElementById('texto').style.backgroundColor = 'yellow';
+    }
+
+    function recuperarValor(){
+      var value = document.getElementById('texto').value;
+
+      if(value.length < 3){
+        document.getElementById('texto').style.backgroundColor = 'red';
+      }else{
+        document.getElementById('texto').style.backgroundColor = 'green';
+      }
+    }
+
+  </script>
+</head>
+<body>
+   <input type="text" onfocus="modificarBackground();" onblur="recuperarValor();" id="texto">
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Javascript</title>
+
+  <script>
+    function acao1(){
+      alert('Elemento foi clicado')
+    }
+
+    function acao2(){
+      alert('O cursor do mouse deixou a região do elemento')
+    }
+
+  </script>
+
+</head>
+<body>
+  <!-- <div onclick="acao()" style="background: #ccc; height: 150px; width: 150px;"></div> -->
+  <!-- <div ondblclick="acao()" style="background: #ccc; height: 150px; width: 150px;"></div> -->
+  <!-- <div onmouseup="acao()" style="background: #ccc; height: 150px; width: 150px;"></div> -->
+  <!-- <div onmouseover="acao()" style="background: #ccc; height: 150px; width: 150px;"></div> -->
+  <!-- <div onmouseout="acao()" style="background: #ccc; height: 150px; width: 150px;"></div> -->
+  <div onclick="acao1()"  onmouseout="acao2()" style="background: #ccc; height: 150px; width: 150px;"></div>
+
+  <!-- Verificar suporte dos eventos -->
+  <!-- https://www.w3schools.com/jsref/dom_obj_event.asp -->
+</body>
+</html>

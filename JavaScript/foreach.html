@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript</title>
+  <script>
+    // var listaFuncionarios = ['Alexia', 'David', 'Bruno']
+    var listaFuncionarios = Array()
+
+    listaFuncionarios['x'] = 'Alexia'
+    listaFuncionarios[3] = 'David'
+    listaFuncionarios[-12] = 'Bruno'
+
+    var f = function(valor, indice){
+        console.log(valor, indice)
+    }
+
+    listaFuncionarios.forEach(f)
+
+    // listaFuncionarios.forEach(function(valor, indice, array){
+    //   //logica
+    //   console.log('indice: '+indice+' valor: '+valor)
+
+    //   if(valor == 'Alexia') {
+    //     array[indice] = 'Chocoresco'
+    //   }
+
+    //   console.log(array)
+    // })
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>
