@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "module": "amd",
+        "outDir": "./js", 
+        "target": "es5",
+        "lib": [
+            "es2016",
+            "dom",
+            "es5"
+        ],
+        "allowSyntheticDefaultImports": true
+    }, 
+    "files": [
+        "app.ts"
+    ]
+}
